@@ -261,7 +261,7 @@ function LoginScreen({ user, setAppUser }) {
           createdAt: new Date().toISOString()
         };
 
-        await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'users', user.uid), userData);
+        await setDoc(doc(db, 'artifacts', appId, 'public', 'data', 'users', normalizedEmail.replace(/[^a-zA-Z0-9]/g, '_')), userData);
       }
 
       localStorage.setItem('peptech_email', normalizedEmail);
