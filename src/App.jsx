@@ -225,7 +225,7 @@ function LoginScreen({ user, setAppUser }) {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    if (!email || !name || !user) return;
+    if (!email || !name) return;
     setIsSubmitting(true);
 
     const normalizedEmail = email.trim().toLowerCase();
