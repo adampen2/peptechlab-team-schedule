@@ -6,12 +6,12 @@ import { getFirestore, collection, doc, setDoc, onSnapshot, deleteDoc, query, wh
 
 // --- INICJALIZACJA FIREBASE ---
 const firebaseConfig = {
-    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-    appId: import.meta.env.VITE_FIREBASE_APP_ID
+    apiKey: "AIzaSyCsuDKIgyvh8a0YDZGjGgz_-iOzq5EpkVc",
+    authDomain: "peptechlab-team-schedule.firebaseapp.com",
+    projectId: "peptechlab-team-schedule",
+    storageBucket: "peptechlab-team-schedule.firebasestorage.app",
+    messagingSenderId: "89414428650",
+    appId: "1:89414428650:web:70bec3af81cd50fa6e7493"
       };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
